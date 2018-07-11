@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: poller
+Version: 0.1
+Summary: Poller that runs code at a requested frequency
+Home-page: https://github.com/AnnAnnFryingPan/poller
+Author: Ann Gledson
+Author-email: anngledson@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
