@@ -1,8 +1,12 @@
 import time
+import schedule
 from abc import ABCMeta, abstractmethod
 
 
 class Poller(object):
+    """
+    Base class for classes that run
+    """
     __metaclass__ = ABCMeta
     def __init__(self, polling_interval_secs):
         self.running = False
@@ -11,6 +15,11 @@ class Poller(object):
 
     @abstractmethod
     def do_work(self):
+        """
+
+        :return:
+
+        """
         raise NotImplementedError("Must override method: do_work")
 
 
