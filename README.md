@@ -1,13 +1,12 @@
 
 ## Poller Package
 
-"""
+
     Base class for classes that polls a task regularly, with a constant minimum time interval between each poll.
     Warning: Each polling interval is the maximum of a) polling_interval_secs and b) the time taken to do the task.
             (so the polling interval might be longer than polling_interval_secs
     ToDo: An alternative name might be ScheduledTask
 
-    """
 
 
     def __init__(self):

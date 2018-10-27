@@ -1,9 +1,0 @@
-README.md
-setup.py
-poller/__init__.py
-poller/poller.py
-poller.egg-info/PKG-INFO
-poller.egg-info/SOURCES.txt
-poller.egg-info/dependency_links.txt
-poller.egg-info/not-zip-safe
-poller.egg-info/top_level.txt

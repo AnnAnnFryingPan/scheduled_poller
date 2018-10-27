@@ -2,6 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d606c003-15fe-4e0c-ac5a-2e177f09b1db" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/poller/poller.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/poller/poller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/poller-0.1-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/poller-0.1.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller.egg-info/not-zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller.egg-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poller/poller.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,14 +41,42 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-923530401">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="19" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/poller/poller.py">
+        <entry file="file://$PROJECT_DIR$/scheduled_poller/scheduled_poller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="655">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="542">
+              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -54,6 +94,7 @@
       <list>
         <option value="$PROJECT_DIR$/poller.py" />
         <option value="$PROJECT_DIR$/poller/poller.py" />
+        <option value="$PROJECT_DIR$/scheduled_poller/scheduled_poller.py" />
       </list>
     </option>
   </component>
@@ -73,28 +114,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="poller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poller" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduled_poller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduled_poller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="poller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poller" type="462c0819:PsiDirectoryNode" />
-              <item name="poller" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduled_poller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scheduled_poller" type="462c0819:PsiDirectoryNode" />
+              <item name="scheduled_poller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../iot_api_poller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -128,7 +169,7 @@
     <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553419" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.258547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -159,10 +200,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/poller.py" />
-    <entry file="file://$PROJECT_DIR$/poller/poller.py">
+    <entry file="file://$PROJECT_DIR$/poller/poller.py" />
+    <entry file="file://$PROJECT_DIR$/scheduled_poller/scheduled_poller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="542">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
