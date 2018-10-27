@@ -1,6 +1,7 @@
 import time
 from abc import ABCMeta, abstractmethod
 
+DEFAULT_INTERVAL = 5.0
 
 class Poller(object):
     """
@@ -10,26 +11,17 @@ class Poller(object):
     ToDo: An alternative name might be ScheduledTask
 
     """
+
+
+
     __metaclass__ = ABCMeta
-    def __init__(self, polling_interval_secs):
+    def __init__(self):
         """
             Construct a new Poller object (Poller is an abstract class)
-
-            :param polling_interval_secs: time interval (seconds) between scheduled runs.
-            :raises polling_interval_secs must be greater than 0 or a ValueError will be returned.
-            :type polling_interval_secs: float
-
-            Warning: Each polling interval is the maximum of a) polling_interval_secs and b) the time taken to do the task.
-            (so the polling interval might be longer than polling_interval_secs
-
-
         """
 
         self.running = False
-        if(polling_interval_secs > 0.0):
-            self.polling_interval_secs = polling_interval_secs
-        else:
-            raise ValueError("Polling interval must be greater than 0 seconds.")
+        self.polling_interval = DEFAULT_INTERVAL
 
 
     @abstractmethod
@@ -43,14 +35,22 @@ class Poller(object):
         raise NotImplementedError("Must override method: do_work")
 
 
-    def start(self):
+    def start(self, polling_interval_secs=DEFAULT_INTERVAL):
         """
-            Start the poller. This will run the do_work procedure every self.polling_interval_secs seconds
+            Start (or re-start) the poller. This will run the do_work procedure every self.polling_interval_secs seconds
             If the do_work procedure takes longer than polling_interval_secs, the next poll will take place as
             soon as the task has finished:
                 Each polling interval is the maximum of a) polling_interval_secs and b) the time taken to do the task.
 
+            :param polling_interval_secs: time interval (seconds) between scheduled runs.
+            :raises polling_interval_secs must be greater than 0 or a ValueError will be returned.
+            :type polling_interval_secs: float
+
         """
+
+        if polling_interval_secs <= 0.0:
+            raise ValueError("polling_interval_secs must be greater than 0")
+
         self.running = True
         while self.running:
             start = time.clock()
@@ -62,7 +62,7 @@ class Poller(object):
 
     def stop(self):
         """
-            Stop the poller.  
+            Stop the poller. if it is running. If none is running, do nothing.
 
         """
         self.running = False
