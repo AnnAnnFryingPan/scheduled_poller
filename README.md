@@ -1,5 +1,5 @@
 
-## Poller Package
+## scheduled_poller Package
 
 
     Base class for classes that polls a task regularly, with a constant minimum time interval between each poll.
@@ -11,7 +11,7 @@
 
     def __init__(self):
         """
-            Construct a new Poller object (Poller is an abstract class)
+            Construct a new Scheduled_poller object (Scheduled_poller is an abstract class)
         """
 
 
